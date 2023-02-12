@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.top-header{
+    height: 3.8rem;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(10, 38, 71);
+}
+#logos{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin-top: 0.8rem;
+}
+#logos h1{
+    color: white;
+    margin: auto;
+    margin-top: 10.5px;
+    margin-left: 6px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+}
+#logos img{
+    height: 2rem;
+}
+.nav-item{
+    border-bottom: 3px solid transparent;
+}
+
+.dropdown-item:hover{
+    background-color: #4b99de;
+    transition-duration: 0.4s;
+    color: rgb(228, 228, 228);
+}
+.nav-item:hover{
+    transition-duration: 0.4s;
+    color: rgb(228, 228, 228);
+    border-bottom: 3px solid white;   
+}
+.nav-item:hover .nav-link{
+    color: rgb(228, 228, 228);
+}
+.dropdown-item{
+    text-transform: uppercase;
+    color:rgb(228, 228, 228);
+}
+.nav-link{
+    color: rgb(228, 228, 228);
+    text-transform:uppercase;
+}
+.ikhlas-img{
+    height: 100%;
+}
+#p-2{
+    color: rgb(46, 46, 46);
+}
+@media screen and (min-width:800px){
+    #p-2{
+        font-size: 1.8vw;
+    }
+}
+@media screen and (max-width:770px){
+    .nav-link{
+        font-size: 2.5vw;
+    }
+    .dropdown-item{
+        font-size: 2.5vw;
+        
+    }
+    .search-ligne{
+        width: 90%;
+    }
+    .search-ligne p{
+        font-size: 1vw;
+    }
+    #ikhlas-img{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+main{
+    background:linear-gradient(to bottom,rgba(80, 91, 126, 0.7),rgb(9, 34, 62)),url("../img/633.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: top left;
+    height: fit-content;
+    overflow: hidden;
+    display: block;
+}
+main h2{
+    color: rgb(228, 228, 228);
+    font-size: 6vw;
+}
+.search-ligne{
+    background-color: rgba(32, 82, 149,0.5);
+    border-radius: 25px;
+    color: white;
+    padding: 2% 5%;
+    max-width: 900px;
+    margin: 6% auto;
+    margin-bottom: 15%;
+
+}
+@media screen and (max-width:766px){
+    select[name="ligne"]{
+        margin-bottom: 20px;
+    }
+    
+}
+#IKHLAS{
+    background-color: #0A2647;
+    position: relative;
+}
+#IKHLAS h2{
+    position: absolute;
+    top: -7vw;
+    color: white;
+}
+footer{
+    background: url("../img/bg2.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+#footer_p1{
+    background-color: rgba(10, 38, 71,0.85);
+
+}
+#footer_p1 p{
+    color: white;
+    margin: 0;
+}
+#footer_p1_p1{
+    font-size: 2vw;
+}
+#footer_p1_p2{
+    font-size: 4vw;
+}
+
+#contact-us{
+    display: inline-block;
+    text-decoration: none;
+    background-color: orange;
+    padding: 1vw 4vw;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    border-radius: 50px;
+    margin: 30px 0;
+}
+@media  screen and (max-width:770px) {
+    #footer_p1_p1{
+        font-size: 20px;
+    }
+    #footer_p1_p2{
+        font-size: 23px;
+    }
+}
+#footer_p2{
+    background-color: rgba(10, 38, 71,0.95);
+}
+.footer_info_holder{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.footer_info_holder p{
+    color: white;
+    font-size: 20px;
+}
+.footer_info_holder a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+}
+#footer_p2_p1L{
+    padding: 5% 0;
+}
+#footer_p2_p1A a{
+    text-decoration: none;
+    display: block;
+    color: rgb(189, 189, 189);
+}
+#footer_p2_p1A{
+    padding: 5% 0;
+}
+.accordion-item{
+    background-color: transparent;
+    border: none;
+}
+.accordion-button{
+    background-color: rgba(10, 38, 71,0.5);
+    color: white;
+}
+.accordion-button::after{
+    background-color: white;
+    border-radius: 5px;
+}
+#footer_p3{
+    background-color: rgba(10, 38, 71,1);
+    height: fit-content;
+    
+}
+#footer_p3 p{
+    color: white;
+    margin: 20px;
+
+}
+@media screen and (max-width:992px) {
+    #footer_p2_p1L, .footer_info_holder{
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+@media screen and (min-width:992px) {
+    #footer_p2_p1A{
+        display: none;
+    }
+}
